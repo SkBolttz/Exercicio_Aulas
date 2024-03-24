@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual o peso do seu prato?");
+		double peso = sc.nextDouble();
+		
+		double prato = 0.750;
+		double preco = 25.00;
+		
+		double valorRefeicao = (peso - prato) * preco;
+		
+		System.out.println("O Valor da refeição é de R$" + valorRefeicao);
+		
+		sc.close();
+	}
+} 
