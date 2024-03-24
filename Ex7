@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Quantos refrigerantes de 350ml você quer comprar?");
+		double refri1 = sc.nextDouble();
+		System.out.println("Quantos refrigerantes de 650ml você quer comprar?");
+		double refri2 = sc.nextDouble();
+		System.out.println("Quantos refrigerantes de 2L você quer comprar?");
+		double refri3 = sc.nextDouble();
+	
+		double refri350ml = refri1 * 0.350;
+		double refri600ml = refri2 * 0.600;
+		double refri2L = refri3 * 2;
+		
+		double totalLitros = refri350ml + refri600ml + refri2L;
+		
+		System.out.printf("Você quer um total de %.2fL" , totalLitros);
+
+		sc.close();
+	}
+} 
