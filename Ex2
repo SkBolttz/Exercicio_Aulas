@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual o valor do produto que você deseja comprar?");
+		double produtoV = sc.nextDouble();
+		
+		double produtoComDesconto = produtoV - (produtoV * 0.12);
+		double desconto = produtoV - produtoComDesconto;
+		
+		System.out.println("O valor do desconto é de R$" + desconto);
+		System.out.println("O preço do par de sapatos com desconto é de R%" + produtoComDesconto);
+		
+		sc.close();
+	}
+}
