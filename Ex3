@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Você deseja por quantos R$?");
+		double dinheiro = sc.nextDouble();
+		double preco = 5.76;
+		double litros = dinheiro / preco;
+		
+		System.out.printf("Você consegue abastercer %.2fL", litros);
+		
+		sc.close();
+	}
+} 
