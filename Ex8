@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Quantos U$ você tem para trocar?");
+		double dolar = sc.nextDouble();
+		
+		double cotacao = 5.00;
+		double reais = (dolar * cotacao);
+		
+		System.out.println("Foi devolvido R$" + reais);
+		
+		sc.close();
+	}
+} 
