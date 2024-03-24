@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe o primeiro Cateto:");
+		double cateto1 = sc.nextDouble();
+		System.out.println("Informe o segundo Cateto:");
+		double cateto2 = sc.nextDouble();
+		
+		double hipotenusa = Math.pow(cateto1, 2) + Math.pow(cateto2, 2);
+		
+		System.out.println("O valor da hipotenusa é " + hipotenusa);
+		
+		sc.close();
+	}
+} 
