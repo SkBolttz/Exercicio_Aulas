@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		// Medidas do terreno
+		
+		System.out.println("Digite a altura:");
+		double altura = sc.nextDouble();
+		System.out.println("Digite o comprimento:");
+		double comprimento = sc.nextDouble();
+		
+		double area = (altura * comprimento);
+		
+		System.out.println("A área do terreno é de: " + area);
+		
+		sc.close();
+	}
+}
