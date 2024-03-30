@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual o nome do funcionário?");
+		String nome = sc.nextLine();
+		System.out.println("Quantas horas foram trabalhadas?");
+		double horasTrabalhadas = sc.nextDouble();
+		System.out.println("Possui quantos dependentes?");
+		double dependentes = sc.nextDouble();
+		
+		double salarioBruto = (horasTrabalhadas * 10.00) + (dependentes * 60.00);
+		double desconto = salarioBruto * (13.5 / 100);
+		double salarioLiquido = salarioBruto - desconto ;
+		
+		System.out.println("O nome do funcionário é " + nome);
+		System.out.println("O salário bruto é de R$ " + salarioBruto);
+		System.out.println("O salário liquído é R$ " + salarioLiquido);
+	
+		sc.close();
+	}
+} 
