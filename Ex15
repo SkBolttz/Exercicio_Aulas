@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escolha um número entre 0 a 999:");
+		int num = sc.nextInt();
+		
+		if (num >= 0 && num <= 999) {
+			int centena = num / 100;
+			int dezena = num % 100 / 10;
+			int unidade = num % 10;
+		
+			System.out.println(centena + " centena(s) " + dezena + " dezena(s) " + unidade + " unidade(s)");
+		}
+		sc.close();
+	}
+} 
