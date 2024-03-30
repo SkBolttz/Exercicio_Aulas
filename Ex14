@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double gasolina = 12;
+		
+		System.out.println("Qual foi a distância percorrida em KM?");	
+		double distancia = sc.nextDouble();
+		System.out.println("Qual foi o tempo gasto?");
+		double tempo = sc.nextDouble();
+		
+		double velocidadeMedia = distancia / tempo;
+		
+		double gasolinaGasta = distancia / gasolina;
+		
+		System.out.printf("A velocidade média do motorista foi de %.2fKM/h\n" , velocidadeMedia);
+		System.out.printf("O gasto de gasolina foi de %.2fL" , gasolinaGasta);
+		
+		sc.close();
+	}
+} v
