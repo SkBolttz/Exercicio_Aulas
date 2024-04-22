@@ -1,36 +1,32 @@
 import java.util.Scanner;
 
-public class Main{
-	public static void main(String [] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Qual o valor da compra?");
-		int compra = sc.nextInt();
-		
-		System.out.println("Qual o valor pago?");
-		int valorPago = sc.nextInt();
-		
-		int troco = compra - valorPago;
-		
-		if(troco < 0) {
-			System.out.println("Valor pago insuficiente!");
-		}
-		else {
-			int notas100 = troco / 100;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Qual o valor da compra?");
+        double compra = sc.nextDouble();
+        
+        System.out.println("Qual o valor pago?");
+        double valorPago = sc.nextDouble();
+        
+        double troco = valorPago - compra;
+        
+        if (troco < 0) {
+            System.out.println("Valor pago insuficiente!");
+        } else {
+            int notas100 = (int) (troco / 100);
             troco %= 100;
-			int notas10 = troco / 10;
+            int notas10 = (int) (troco / 10);
             troco %= 10;
-			int notas1 = troco;
+            int notas1 = (int) troco;
 
             System.out.println("Número mínimo de notas: " + (notas100 + notas10 + notas1));
             System.out.println("Número de notas de 100: " + notas100);
             System.out.println("Número de notas de 10: " + notas10);
             System.out.println("Número de notas de 1: " + notas1);
-			
-			
-		}
-		
-		sc.close();
-	}
-} 
+        }
+        
+        sc.close();
+    }
+}
